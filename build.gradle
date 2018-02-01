@@ -17,6 +17,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
 
     compile("mysql:mysql-connector-java:6.0.6")
+    compile group: 'com.h2database', name: 'h2', version: '1.4.196'
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
