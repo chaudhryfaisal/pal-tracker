@@ -88,6 +88,7 @@ jobs:
   - get: pal-tracker
     passed: [deploy-review]
   - get: pal-tracker-artifacts
+    trigger: true
     passed: [deploy-review]
   - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
